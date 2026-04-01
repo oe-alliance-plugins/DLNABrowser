@@ -1,0 +1,18 @@
+{
+  "branch": "main",
+  "depends_recipe": "",
+  "description_control": "this is dlna/upnp browser using djmount",
+  "description_recipe": "this is dlna/upnp browser using djmount",
+  "history_source_dir": "DLNABrowser",
+  "internal_package_name": "enigma2-plugin-extensions-dlnabrowser",
+  "module_dir_name": "DLNABrowser",
+  "output_subdir": "DLNABrowser",
+  "package_name": "enigma2-plugin-extensions-dlnabrowser",
+  "plugin_src_rel": "DLNABrowser",
+  "python_package": "DLNABrowser",
+  "rdepends_recipe": "djmount fuse-utils fuse libupnp1.6 neon",
+  "replaces": "",
+  "repo_name": "DLNABrowser",
+  "rrecommends": "",
+  "rreplaces": ""
+}
