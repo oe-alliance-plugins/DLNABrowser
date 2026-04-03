@@ -13,7 +13,7 @@ from Components.Label import Label
 from Components.ConfigList import ConfigListScreen
 from Components.Sources.StaticText import StaticText
 from Components.ActionMap import ActionMap
-from Components.config import config, ConfigSelection, getConfigListEntry, ConfigYesNo, ConfigSelection, ConfigSubsection
+from Components.config import config, getConfigListEntry, ConfigYesNo, ConfigSelection, ConfigSubsection
 from Components.FileList import FileList
 from Components.MenuList import MenuList
 from Components.Pixmap import Pixmap
@@ -91,7 +91,7 @@ class DLNAFileList(FileList):
 			selectedFileName = self.getSelection()[0]
 			splitedFileName = os.path.splitext(selectedFileName)
 			return EXTENSIONS[splitedFileName[1]]
-		except:
+		except Exception:
 			pass
 		return 'unknown'
 
@@ -201,7 +201,7 @@ class DLNAFileBrowser(Screen):
 					else:
 						self.showUnknown()
 				return
-		except:
+		except Exception:
 			return
 
 	def recursiveFileCheck(self, firstFileType=None):
@@ -213,7 +213,7 @@ class DLNAFileBrowser(Screen):
 			idx = fileDir[:len(fileDir) - 2].rfind(os.sep)
 			if idx > 0:
 				fileDir = fileDir[:idx] + os.sep
-		except:
+		except Exception:
 			return ([], firstFileType)
 		for f in fileList:
 			try:
@@ -234,7 +234,7 @@ class DLNAFileBrowser(Screen):
 						if firstFileType is None or fileType == firstFileType:
 							firstFileType = fileType
 							files = files + newFiles
-			except:
+			except Exception:
 				pass
 			self["filelist"].down()
 		self["filelist"].changeParent()
@@ -266,7 +266,7 @@ class DLNAFileBrowser(Screen):
 				self["filelist"].descent()
 				self.updateDirectory()
 				return
-		except:
+		except Exception:
 			return
 		fileType = self["filelist"].getFileType()
 		self.showCB[fileType]()
@@ -289,7 +289,7 @@ class DLNAFileBrowser(Screen):
 			mp.playlist.addFile(eServiceReference(4097, 0, path))
 			mp.changeEntry(0)
 			mp.switchToPlayList()
-		except:
+		except Exception:
 			self.session.openWithCallback(self.cbShowMovie, DLNAStreamPlayer, eServiceReference(4097, 0, path), self.beforeService)
 
 	def showPicture(self):
@@ -586,7 +586,7 @@ class DLNAImageViewer(Screen):
 			try:
 				text = picInfo.split('\n', 1)
 				text = "(" + str(self.currentIndex + 1) + "/" + str(self.fileListLen + 1) + ") " + text[0].split('/')[-1]
-			except:
+			except Exception:
 				pass
 			self.currentImage = []
 			self.currentImage.append(text)
@@ -770,7 +770,7 @@ class DLNAClientConfig(ConfigListScreen, Screen):
 				value = self.oldConfig.get(key)
 				if value is None or value.strip() == '':
 					self.oldConfig[key] = default
-			except:
+			except Exception:
 				self.oldConfig[key] = default
 
 		self.oldConfig = {}
@@ -787,7 +787,7 @@ class DLNAClientConfig(ConfigListScreen, Screen):
 				i = line.find('=')
 				k, v = line[:i], line[i + 1:]
 				self.oldConfig[k] = v
-			except:
+			except Exception:
 				pass
 
 		#setDefault('rootdir', '/media/upnp/')
@@ -908,7 +908,7 @@ class DLNADeviceBrowser(Screen):
 					DLNA_CONFIG_DEVICE_REFRESH = int(v) * 1000
 				elif k == 'slideshow':
 					DLNA_CONFIG_SLIDESHOW = int(v) * 1000
-			except:
+			except Exception:
 				pass
 		print("config : [%s][%d][%d]" % (DLNA_CONFIG_ROOT_DIR, DLNA_CONFIG_SLIDESHOW, DLNA_CONFIG_DEVICE_REFRESH))
 
@@ -928,21 +928,21 @@ class DLNADeviceBrowser(Screen):
 				newRefresh = int(refresh) * 1000
 				if DLNA_CONFIG_DEVICE_REFRESH != newRefresh:
 					DLNA_CONFIG_DEVICE_REFRESH = newRefresh
-		except:
+		except Exception:
 			pass
 		try:
 			if rootdir is not None:
 				if DLNA_CONFIG_ROOT_DIR != rootdir:
 					DLNA_CONFIG_ROOT_DIR = rootdir
 					print("need restart!!!")
-		except:
+		except Exception:
 			pass
 		try:
 			if slideshow is not None:
 				newSlideshow = int(slideshow) * 1000
 				if DLNA_CONFIG_SLIDESHOW != newSlideshow:
 					DLNA_CONFIG_SLIDESHOW = newSlideshow
-		except:
+		except Exception:
 			pass
 		self.deviceListRefreshTimer.start(DLNA_CONFIG_DEVICE_REFRESH)
 		print("config : [%s][%d][%d]" % (DLNA_CONFIG_ROOT_DIR, DLNA_CONFIG_SLIDESHOW, DLNA_CONFIG_DEVICE_REFRESH))
