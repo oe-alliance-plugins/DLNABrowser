@@ -726,16 +726,16 @@ class DLNAClientConfig(ConfigListScreen, Screen):
 	def keyOK(self):
 		config.plugins.dlnabrowser.autostart.save()
 		self.writeConfigFile()
-		#self.close(self.menuItemRefresh.value, self.menuItemRootDir.value)
+		# self.close(self.menuItemRefresh.value, self.menuItemRootDir.value)
 		self.close(self.menuItemRefresh.value, None, self.menuItemSlideshow.value)
 
 	def makeMenuList(self):
 		self.readConfigFile()
-		#self.menuItemRootDir   = ConfigText(default=self.oldConfig.get('rootdir'))
+		# self.menuItemRootDir   = ConfigText(default=self.oldConfig.get('rootdir'))
 		self.menuItemRefresh = ConfigSelection(default=self.oldConfig.get('refresh'), choices=[("5", _("5")), ("10", _("10")), ("15", _("15"))])
 		self.menuItemSlideshow = ConfigSelection(default=self.oldConfig.get('slideshow'), choices=[("5", _("5")), ("10", _("10")), ("15", _("15")), ("20", _("20"))])
 
-		#self.menuEntryRootDir   = getConfigListEntry(_("Mount Point"), self.menuItemRootDir)
+		# self.menuEntryRootDir   = getConfigListEntry(_("Mount Point"), self.menuItemRootDir)
 		self.menuEntryRefresh = getConfigListEntry(_("DeviceList Refresh Interval"), self.menuItemRefresh)
 		self.menuEntrySlideshow = getConfigListEntry(_("Slideshow Interval"), self.menuItemSlideshow)
 		self.menuEntryAutoStart = getConfigListEntry(_("Enable Autostart for DLNA Browser"), config.plugins.dlnabrowser.autostart)
@@ -743,7 +743,7 @@ class DLNAClientConfig(ConfigListScreen, Screen):
 
 	def resetMenuList(self):
 		self.menulist = []
-		#self.menulist.append(self.menuEntryRootDir)
+		# self.menulist.append(self.menuEntryRootDir)
 		self.menulist.append(self.menuEntryRefresh)
 		self.menulist.append(self.menuEntrySlideshow)
 		self.menulist.append(self.menuEntryAutoStart)
@@ -756,7 +756,7 @@ class DLNAClientConfig(ConfigListScreen, Screen):
 				origin += "%s=%s\n" % (key, value)
 			return origin
 		configString = ""
-		#configString = configDataAppend(configString, "rootdir", self.menuItemRootDir.value)
+		# configString = configDataAppend(configString, "rootdir", self.menuItemRootDir.value)
 		configString = configDataAppend(configString, "refresh", self.menuItemRefresh.value)
 		configString = configDataAppend(configString, "slideshow", self.menuItemSlideshow.value)
 		print(configString)
@@ -775,7 +775,7 @@ class DLNAClientConfig(ConfigListScreen, Screen):
 
 		self.oldConfig = {}
 		if not os.path.exists(self.configFileName):
-			#setDefault('rootdir', '/media/upnp/')
+			# setDefault('rootdir', '/media/upnp/')
 			setDefault('refresh', '10')
 			setDefault('slideshow', '10')
 			return
@@ -790,7 +790,7 @@ class DLNAClientConfig(ConfigListScreen, Screen):
 			except Exception:
 				pass
 
-		#setDefault('rootdir', '/media/upnp/')
+		# setDefault('rootdir', '/media/upnp/')
 		setDefault('refresh', '10')
 		setDefault('slideshow', '10')
 		print("Current Config : ", self.oldConfig)
@@ -860,8 +860,8 @@ class DLNADeviceBrowser(Screen):
 			self.taskManager.append(cmd, self.cbPrintAvail, self.cbPrintClose)
 			cmd = 'modprobe -r fuse'
 			self.taskManager.append(cmd, self.cbPrintAvail, self.cbStopDone)
-			#cmd = 'killall -9 djmount'
-			#self.taskManager.append(cmd, self.cbPrintAvail, self.cbTasksDone)
+			# cmd = 'killall -9 djmount'
+			# self.taskManager.append(cmd, self.cbPrintAvail, self.cbTasksDone)
 			self["devicelist"].setList([])
 		else:
 			cmd = 'modprobe fuse'
