@@ -69,7 +69,7 @@ class DLNAFileList(FileList):
 		self.changeDir(self.rootDir, select=parent)
 
 	def changeParent(self):
-		i, parent, grandParent = 0, "", ""
+		i, parent, grandParent = 0, "", ""  # noqa: F841
 		currentDir = self.getCurrentDirectory()
 		if currentDir == self.rootDir:
 			return False
