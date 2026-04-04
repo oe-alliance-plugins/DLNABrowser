@@ -545,20 +545,20 @@ class DLNAImageViewer(Screen):
 		self.startDecode()
 
 	def makeFileList(self, fileList, path):
-		for x in fileList:
-			l = len(fileList[0])
-			if l == 3:
-				if x[0][1] is False:
-					self.fileList.append(path + x[0][0])
+		for item in fileList:
+			item_len = len(fileList[0])
+			if item_len == 3:
+				if item[0][1] is False:
+					self.fileList.append(path + item[0][0])
 				else:
 					self.directoryCount += 1
-			elif l == 2:
-				if x[0][1] is False:
-					self.fileList.append(x[0][0])
+			elif item_len == 2:
+				if item[0][1] is False:
+					self.fileList.append(item[0][0])
 				else:
 					self.directoryCount += 1
 			else:
-				self.fileList.append(x[4])
+				self.fileList.append(item[4])
 
 		self.currentIndex = self.lsatIndex - self.directoryCount
 		if self.currentIndex < 0:
