@@ -1,6 +1,6 @@
 from __future__ import print_function
 from Plugins.Plugin import PluginDescriptor
-from Plugins.Extensions.PicturePlayer.ui import *
+#from Plugins.Extensions.PicturePlayer.ui import *
 import os
 from enigma import eTimer, eConsoleAppContainer, ePicLoad, getDesktop, eServiceReference, iPlayableService
 
