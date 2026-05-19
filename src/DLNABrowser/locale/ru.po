@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: DLNABrowser\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-30 19:14+0200\n"
+"POT-Creation-Date: 2026-04-08 10:12+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: litvcom\n"
 "Language-Team: \n"
@@ -16,76 +16,100 @@ msgstr ""
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SearchPath-0: .\n"
 
+#: ../plugin.py:717 ../plugin.py:718
 msgid " "
 msgstr " "
 
+#: ../plugin.py:356
 msgid "/"
 msgstr "/"
 
+#: ../plugin.py:735 ../plugin.py:736
 msgid "10"
 msgstr "10"
 
+#: ../plugin.py:735 ../plugin.py:736
 msgid "15"
 msgstr "15"
 
+#: ../plugin.py:736
 msgid "20"
 msgstr "20"
 
+#: ../plugin.py:735 ../plugin.py:736
 msgid "5"
 msgstr "5"
 
+#: ../plugin.py:152
 msgid "Add all"
 msgstr "Добавить все"
 
+#: ../plugin.py:1011
 msgid "DLNA/uPnP Browser"
 msgstr "DLNA/UPnP браузер"
 
+#: ../plugin.py:739
 msgid "DeviceList Refresh Interval"
 msgstr "Интервал обновления устройств"
 
+#: ../plugin.py:741
 msgid "Enable Autostart for DLNA Browser"
 msgstr "Включить автозапуск для DLNA-браузера"
 
+#: ../plugin.py:715 ../plugin.py:828
 msgid "Exit"
 msgstr "Выход"
 
+#: ../plugin.py:395
 msgid "No"
 msgstr "Нет"
 
+#: ../plugin.py:475
 msgid "Please wait, Loading image."
 msgstr "Подождите, идет загрузка изображения."
 
 # This is a small button label. It has to be 1 word only.
+#: ../plugin.py:831
 msgid "Reload Device"
 msgstr "Перезагрузить"
 
+#: ../plugin.py:716
 msgid "Save"
 msgstr "Сохранить"
 
+#: ../plugin.py:830
 msgid "Setting"
 msgstr "Настройка"
 
 # This is a small button label. It has to be 1 word only.
+#: ../plugin.py:151
 msgid "Show Device"
 msgstr "Устройства"
 
+#: ../plugin.py:740
 msgid "Slideshow Interval"
 msgstr "Интервал слайд-шоу"
 
+#: ../plugin.py:829
 msgid "Start"
 msgstr "Начать"
 
+#: ../plugin.py:396
 msgid "Stop playing this movie?"
 msgstr "Остановить воспроизведение?"
 
+#: ../plugin.py:1011
 msgid "This is dlna/upnp client using djmount."
 msgstr "Клиент dlna/upnp использующий djmount."
 
+#: ../plugin.py:154
 msgid "Top"
 msgstr "Топ"
 
+#: ../plugin.py:153
 msgid "Up"
 msgstr "Вверх"
 
+#: ../plugin.py:395
 msgid "Yes"
 msgstr "Да"

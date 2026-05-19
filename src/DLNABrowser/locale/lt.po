@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: DLNABrowser\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-30 19:14+0200\n"
+"POT-Creation-Date: 2026-04-08 10:12+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Vytenis P. <vyteniui@gmail.com>\n"
 "Language-Team: openATV\n"
@@ -16,74 +16,98 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Poedit-SearchPath-0: .\n"
 
+#: ../plugin.py:717 ../plugin.py:718
 msgid " "
 msgstr " "
 
+#: ../plugin.py:356
 msgid "/"
 msgstr "/"
 
+#: ../plugin.py:735 ../plugin.py:736
 msgid "10"
 msgstr "10"
 
+#: ../plugin.py:735 ../plugin.py:736
 msgid "15"
 msgstr "15"
 
+#: ../plugin.py:736
 msgid "20"
 msgstr "20"
 
+#: ../plugin.py:735 ../plugin.py:736
 msgid "5"
 msgstr "5"
 
+#: ../plugin.py:152
 msgid "Add all"
 msgstr "Įkelti viską"
 
+#: ../plugin.py:1011
 msgid "DLNA/uPnP Browser"
 msgstr "DLNA/uPnP naršyklė"
 
+#: ../plugin.py:739
 msgid "DeviceList Refresh Interval"
 msgstr "Įrenginių sąrašo atnaujinimo intervalas"
 
+#: ../plugin.py:741
 msgid "Enable Autostart for DLNA Browser"
 msgstr "Įjungti DLNA naršyklės autopaleidimą"
 
+#: ../plugin.py:715 ../plugin.py:828
 msgid "Exit"
 msgstr "Užverti"
 
+#: ../plugin.py:395
 msgid "No"
 msgstr "Ne"
 
+#: ../plugin.py:475
 msgid "Please wait, Loading image."
 msgstr "Palaukite, diegiamas atvaizdas."
 
+#: ../plugin.py:831
 msgid "Reload Device"
 msgstr "Paleisti iš naujo"
 
+#: ../plugin.py:716
 msgid "Save"
 msgstr "Išsaugoti"
 
+#: ../plugin.py:830
 msgid "Setting"
 msgstr "Nustatymas"
 
+#: ../plugin.py:151
 msgid "Show Device"
 msgstr "Rodyti įrenginį"
 
+#: ../plugin.py:740
 msgid "Slideshow Interval"
 msgstr "Intervalas tarp skaidrių"
 
+#: ../plugin.py:829
 msgid "Start"
 msgstr "Pradėti"
 
+#: ../plugin.py:396
 msgid "Stop playing this movie?"
 msgstr "Nutraukti šį filmą ?"
 
+#: ../plugin.py:1011
 msgid "This is dlna/upnp client using djmount."
 msgstr "tai DLNA/UPnP klientas, naudojantis Djmount."
 
+#: ../plugin.py:154
 msgid "Top"
 msgstr "Viršus"
 
+#: ../plugin.py:153
 msgid "Up"
 msgstr "Aukštyn"
 
+#: ../plugin.py:395
 msgid "Yes"
 msgstr "Taip"

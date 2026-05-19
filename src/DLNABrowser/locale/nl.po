@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: DLNABrowser\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-11-07 09:51+0000\n"
+"POT-Creation-Date: 2026-04-08 10:12+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Rob van der Does <RobvanderDoes@Gmail.com>\n"
 "Language-Team: openATV\n"
@@ -16,74 +16,98 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SearchPath-0: .\n"
 
+#: ../plugin.py:717 ../plugin.py:718
 msgid " "
 msgstr " "
 
+#: ../plugin.py:356
 msgid "/"
 msgstr "/"
 
+#: ../plugin.py:735 ../plugin.py:736
 msgid "10"
 msgstr "10"
 
+#: ../plugin.py:735 ../plugin.py:736
 msgid "15"
 msgstr "15"
 
+#: ../plugin.py:736
 msgid "20"
 msgstr "20"
 
+#: ../plugin.py:735 ../plugin.py:736
 msgid "5"
 msgstr "5"
 
+#: ../plugin.py:152
 msgid "Add all"
 msgstr "Alles toevoegen"
 
+#: ../plugin.py:1011
 msgid "DLNA/uPnP Browser"
 msgstr "DLNA/uPnP browser"
 
+#: ../plugin.py:739
 msgid "DeviceList Refresh Interval"
 msgstr "Apparaat lijst ververs tussentijd"
 
+#: ../plugin.py:741
 msgid "Enable Autostart for DLNA Browser"
 msgstr "Autostart voor DLNA Browser inschakelen"
 
+#: ../plugin.py:715 ../plugin.py:828
 msgid "Exit"
 msgstr "Sluit af"
 
+#: ../plugin.py:395
 msgid "No"
 msgstr "Nee"
 
+#: ../plugin.py:475
 msgid "Please wait, Loading image."
 msgstr "Een moment geduld a.u.b., laden afbeelding."
 
+#: ../plugin.py:831
 msgid "Reload Device"
 msgstr "Herlaad apparaat"
 
+#: ../plugin.py:716
 msgid "Save"
 msgstr "Sla op"
 
+#: ../plugin.py:830
 msgid "Setting"
 msgstr "Instelling"
 
+#: ../plugin.py:151
 msgid "Show Device"
 msgstr "Toon apparaat"
 
+#: ../plugin.py:740
 msgid "Slideshow Interval"
 msgstr "Diashow tussentijd"
 
+#: ../plugin.py:829
 msgid "Start"
 msgstr "Start"
 
+#: ../plugin.py:396
 msgid "Stop playing this movie?"
 msgstr "Stop afspelen van Film?"
 
+#: ../plugin.py:1011
 msgid "This is dlna/upnp client using djmount."
 msgstr "Dit is de dlna/upnp client die gebruik maakt van djmount."
 
+#: ../plugin.py:154
 msgid "Top"
 msgstr "Bovenin"
 
+#: ../plugin.py:153
 msgid "Up"
 msgstr "Omhoog"
 
+#: ../plugin.py:395
 msgid "Yes"
 msgstr "Ja"

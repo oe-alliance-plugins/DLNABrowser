@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: DLNABrowser\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-07 14:06+0000\n"
+"POT-Creation-Date: 2026-04-08 10:12+0200\n"
 "PO-Revision-Date: 2019-04-12 10:52+0300\n"
 "Last-Translator: mosad - مساعد الجعيد <abo-mishal@hotmail.com>\n"
 "Language-Team: mosad\n"
@@ -13,74 +13,98 @@ msgstr ""
 "X-Generator: Poedit 2.2.1\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
+#: ../plugin.py:717 ../plugin.py:718
 msgid " "
 msgstr " "
 
+#: ../plugin.py:356
 msgid "/"
 msgstr "/"
 
+#: ../plugin.py:735 ../plugin.py:736
 msgid "10"
 msgstr "10"
 
+#: ../plugin.py:735 ../plugin.py:736
 msgid "15"
 msgstr "١٥"
 
+#: ../plugin.py:736
 msgid "20"
 msgstr "20"
 
+#: ../plugin.py:735 ../plugin.py:736
 msgid "5"
 msgstr "5"
 
+#: ../plugin.py:152
 msgid "Add all"
 msgstr "إضافة الكل"
 
+#: ../plugin.py:1011
 msgid "DLNA/uPnP Browser"
 msgstr "تصفح خادم مشاركة الاجهزة للوسائط عبر الشبكة"
 
+#: ../plugin.py:739
 msgid "DeviceList Refresh Interval"
 msgstr "فترة تحديث قائمة الاجهزة"
 
+#: ../plugin.py:741
 msgid "Enable Autostart for DLNA Browser"
 msgstr "تمكين التشغيل التلقائي لخادم مشاركة الاجهزة للوسائط عبر الشبكة"
 
+#: ../plugin.py:715 ../plugin.py:828
 msgid "Exit"
 msgstr "تسجيل الخروج"
 
+#: ../plugin.py:395
 msgid "No"
 msgstr "لا"
 
+#: ../plugin.py:475
 msgid "Please wait, Loading image."
 msgstr "انتظر من فضلك, يتم تحميل الصورة."
 
+#: ../plugin.py:831
 msgid "Reload Device"
 msgstr "إعادة تحميل الجهاز"
 
+#: ../plugin.py:716
 msgid "Save"
 msgstr "                                            حفظ"
 
+#: ../plugin.py:830
 msgid "Setting"
 msgstr "الإعداد"
 
+#: ../plugin.py:151
 msgid "Show Device"
 msgstr "عرض الجهاز"
 
+#: ../plugin.py:740
 msgid "Slideshow Interval"
 msgstr "فترة عرض الشرائح"
 
+#: ../plugin.py:829
 msgid "Start"
 msgstr "تشغيل"
 
+#: ../plugin.py:396
 msgid "Stop playing this movie?"
 msgstr "إيقاف عرض هذا الفيلم؟"
 
+#: ../plugin.py:1011
 msgid "This is dlna/upnp client using djmount."
 msgstr "مكتبة المستخدم لمشاركة الاجهزة للوسائط عبر الشبكة."
 
+#: ../plugin.py:154
 msgid "Top"
 msgstr "الأفضل"
 
+#: ../plugin.py:153
 msgid "Up"
 msgstr "أعلى"
 
+#: ../plugin.py:395
 msgid "Yes"
 msgstr "نعم"
